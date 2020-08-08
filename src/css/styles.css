@@ -1,0 +1,813 @@
+/* CLEAR FIX START */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+
+.clearfix { display: inline-block; }
+  
+/* start commented backslash hack \*/
+html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* ---CLEAR FIX END---- */
+label{
+    font-weight: normal;
+}
+/*------------------ MATERIAL DESIGN OVERRIDES--------------------------*/
+
+.mdl-layout__drawer {
+    width: 320px;
+    left: -180px;
+}
+
+.mdl-layout__drawer.is-visible {
+    left: 0;
+}
+
+/*------------------ MATERIAL DESIGN OVERRIDES--------------------------*/
+
+
+
+
+#pm-map-summary h2 {
+    font-size: 1.8em;
+    font-stretch: expanded;
+    font-variant: all-small-caps;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.pm-project-summary-minimize{
+    float: right;
+}
+
+.pm-project-summary-minimize > i{
+    font-size: 25px;
+}
+
+#pm-map-summary-hidden-icon-wrp{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+#pm-map-summary-hidden-icon-wrp:hover{
+    cursor: pointer
+}
+
+#pm-map-summary-hidden-icon-wrp i{
+    font-size: 30px;
+}
+#pm-map-summary-overlays{
+    max-height: 135px;
+    overflow-y: auto;
+}
+
+/* map search bar */
+
+ .pm-map-search-wrp{
+     padding:0 10px;
+     position: absolute;    
+     top: 14px;
+     left: 50px;
+     background-color: white;
+     height: 40px;
+ }
+ .pm-map-search-wrp .mdl-textfield{
+     padding: 10px 0 0 0 !important;
+     float: left;
+ }
+ 
+ .pm-map-search-wrp .mdl-textfield input{
+     border: none !important;
+     font-size: 14px !important;
+ }
+ 
+ .pm-map-search-wrp .mdl-textfield input::-webkit-input-placeholder {
+     font-size: 14px;
+     line-height: 3;
+ }
+ 
+ .pm-map-search-wrp .pm-map-search-icon{
+     float: left;
+     display: block;
+     padding: 5px 0;
+ }
+ 
+ .pm-map-search-wrp .pm-map-search-icon:hover{
+     cursor:pointer;    
+ }
+ 
+ .ui-autocomplete{
+     max-height: 30vh;
+     overflow-y: scroll;
+ }
+ 
+ .pm-map-search-wrp .pm-map-menu-icon{
+     float: left;
+     display: block;
+     padding: 10px 10px 5px 0;
+     cursor:pointer;        
+ }
+ .mdl-layout__drawer-button{
+     visibility: hidden !important;
+ }
+
+ /* Map PopUp */
+ .ol-popup {
+    position: absolute;
+    background-color: white;
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+    min-width: 280px;
+}
+
+.ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+
+.ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    color: black;
+}
+
+.ol-popup-closer:after {
+    content: "✖";
+}
+
+
+
+/* Drawer */
+
+.pm-map-drawer{
+    padding: 10px;
+}
+
+.pm-radio{
+    margin-right: 5px;
+}
+
+/******************************************************************************************************************************************************************/
+        /********************************************************************* PROJECT SUMMARY *******************************************************/
+/*******************************************************************************************************************************************************************/
+.pm-map-summary-count {
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+/********************************************************************************
+********************************* CHART *****************************************
+*********************************************************************************/
+/* .pm-charts-add {
+    padding: 30px;
+    position: relative;
+} */
+
+/* .pm-chart-add-button{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+} */
+
+.chart-wrapper{
+    padding: 20px;
+}
+
+
+.highcharts-menu-item i{
+    font-size: 14px;
+    float: left;
+}
+
+.pm-hichart-menu-text{  
+    display: block;
+    float: left;
+}
+
+  /******************************CONFIRMATION POP UP**********************************/
+  .pm-dialog-confirmation_popup{
+    min-width: 400px;
+    min-height: 200px;
+    padding: 0 !important;
+}
+
+.pm-dialog-confirmation_popup_title{
+    padding: 10px !important;
+    text-align: center;
+    background: red;
+    color: whitesmoke;
+    font-size: 26px;
+}
+
+/* CHART FORM*/
+
+.pm-mdl-chart-add-form{
+    padding: 0 !important;
+    min-width: 80%;
+    height: auto;
+  }
+  .pm-add-chart-card{
+    width: 100%;
+    height: 100%;
+  }
+  .pm-add-chart-form-wrp{
+    padding: 20px;
+  }
+  .pm-add-chart-type-wrp .mdl-radio{
+    padding-right: 20px !important;
+  }
+  
+  .pm-add-chart-button{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  .pm-add-chart-button:hover{
+    cursor: pointer;
+    }
+  
+ #pm-add-chart-save-chart__button{
+    float: right;
+  }
+.pm-add-chart-survey-field-container > .mdl-textfield{
+    margin-right: 10px;
+}
+.pm-add-chart-survey-field-container > .mdl-textfield:last-child{
+    margin-right: 0;
+}
+
+.pm-chart-add-default-color-picker{
+    height: 30px;
+    width: 60%;
+    padding: 6px 6px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.pm-preview-button{
+    background-color: #71AAEC;
+    color: #fff
+}
+
+
+/*****************************************************
+**********************LOGIN***************************
+******************************************************/
+
+.pm-login-wrp{
+    padding: 124px 0;
+}
+.pm-login-container{
+    width: 500px;
+    margin:0 auto;
+    background-color: #e9ebee;
+    padding: 45px 0px;    
+}
+
+.pm-login-form-wpr{
+    margin: 0 auto;
+}
+.pm-login-form-header{
+    padding: 18px 0;
+    text-align: center;    
+}
+.pm-login-form-header span{
+    font-size: 18px;
+    line-height: 22px;
+    color:#8F8F8F;
+}
+.pm-login-form-container{
+    padding: 0 100px;
+}
+.pm-login-hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: 0.5;
+  }
+  .pm-login-hr-text:before {
+    content: "";
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  .pm-login-hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 0.5em;
+    line-height: 1.5em;
+    color: #818078;
+    background-color: #e9ebee;
+  }
+
+  .pm-forgot-password-container{
+    text-align: center !important;
+  }
+
+  .pm-forgot-password-container a{
+    color:#6495ed ;
+  }
+
+  .pm-dashboard-project-list a{
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  .pm-dashboard-project-list .mdl-list__item{
+      background: #ccc;
+      width:30%;
+      margin: 10px auto;
+  }
+
+
+ .pm-dashboard-project-list .mdl-list__item:hover{
+    cursor: pointer;
+}
+
+/* TABLE */
+
+.pm-table-star-true{
+    color:  blue;
+}
+
+
+.pm-delete-button{
+    color: red;
+}
+
+.pm-table{
+    width: 100%;
+}
+
+/* PROJECT INFO */
+
+.pm-project-info-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.pm-text-button{
+    color: #6495ed;
+    border-bottom: dotted;
+}
+.pm-text-button:hover{
+    cursor: pointer;
+}
+
+/*****************************************************
+**********************TABLE***************************
+******************************************************/
+
+.pm-switch input{
+    display: none !important;
+}
+.pm-switch .mdl-switch__label{
+    padding-left: 20px !important;
+}
+
+
+/* ----------------------------------MAP CONTROL CONTAINER--------------------------------*/
+
+#pm-map-control-container button:hover{
+    background-color: #000;
+    display: block;
+    border: none;
+    cursor:pointer;
+}
+
+.pm-loading-wrp {
+    width: 100%;
+    height: 100%;
+    perspective: 600;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pm-loading-wrp svg {
+    width: 240px;
+    height: 240px;
+}
+
+.pm-editable-table {
+    width: 100%;
+}
+
+.pm-editable-table .mdl-textfield {
+    width: 100% !important;
+    padding: 0 !important;
+    font-size: inherit !important;
+}
+.pm-editable-table .mdl-textfield__input {
+    font-size: inherit !important;
+}
+
+.pm-add-survey-filter-wrp{
+    float: left;
+}
+
+.pm-add-survey-filter-wrp>.mdl-textfield{
+    margin-right: 5px;
+}
+
+.pm-icon-avatar{
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.pm-new-user-wrp{
+    min-height: 160px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    padding: 10px;
+}
+
+.pm-new-user-wrp:hover{
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 6px 9px rgba(0,0,0,.2);
+    z-index: 1;
+}
+
+.pm-user-wrp{
+    width: 100%;
+    max-height: 200px;
+    overflow: auto
+}
+
+
+.pm-user-list{
+    width: 320px;
+    margin: 10px;
+    float: left;
+    height: 85px !important;
+}
+
+
+/* --------------- STEPPER START ------------------ */
+ /* .pm-stepper { */
+    /* padding: 10px 20px; */
+  /* } */
+  
+  .pm-stepper .pm-stepper-step {
+    display: table-cell;
+    position: relative;
+    padding: 24px;
+  }
+    
+  .pm-stepper .pm-stepper-step:active {
+    border-radius: 15% / 75%;
+  }
+  
+  .pm-stepper .pm-stepper-step:first-child:active {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .pm-stepper .pm-stepper-step:last-child:active {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  /* .pm-stepper .pm-stepper-step:first-child .pm-stepper-bar-left,
+  .pm-stepper .pm-stepper-step:last-child .pm-stepper-bar-right {
+    display: none;
+  } */
+  
+  .pm-stepper .pm-stepper-step .pm-stepper-circle {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background-color: #9E9E9E;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2em;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .pm-stepper .pm-stepper-step.active-step .pm-stepper-circle {
+    background-color: rgb(33, 150, 243);
+  }
+  
+  .pm-stepper .pm-stepper-step.step-done .pm-stepper-circle:before {
+    content: "\2714";
+  }
+  
+  .pm-stepper .pm-stepper-step.step-done .pm-stepper-circle *,
+  .pm-stepper .pm-stepper-step.editable-step .pm-stepper-circle * {
+    display: none;
+  }
+  
+  .pm-stepper .pm-stepper-step.editable-step .pm-stepper-circle {
+    -moz-transform: scaleX(-1);
+    /* Gecko */
+    -o-transform: scaleX(-1);
+    /* Opera */
+    -webkit-transform: scaleX(-1);
+    /* Webkit */
+    transform: scaleX(-1);
+    /* Standard */
+  }
+  
+  .pm-stepper .pm-stepper-step.editable-step .pm-stepper-circle:before {
+    content: "\270E";
+  }
+  
+  /* .pm-stepper .pm-stepper-step .pm-stepper-title {
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: normal;
+  } */
+  
+  /* .pm-stepper .pm-stepper-step .pm-stepper-title */
+  /* .pm-stepper .pm-stepper-step .pm-stepper-optional */
+   /* {
+    text-align: center;
+    color: rgba(0, 0, 0, .26);
+  } */
+  
+  /* .pm-stepper .pm-stepper-step.active-step .pm-stepper-title {
+    font-weight: 500;
+    color: rgba(0, 0, 0, .87);
+  } */
+  
+  /* .pm-stepper .pm-stepper-step.active-step.step-done .pm-stepper-title,
+  .pm-stepper .pm-stepper-step.active-step.editable-step .pm-stepper-title {
+    font-weight: 300;
+  } */
+  
+  /* .pm-stepper .pm-stepper-step .pm-stepper-optional {
+    font-size: 12px;
+  } */
+  
+  .pm-stepper .pm-stepper-step.active-step .pm-stepper-optional {
+    color: rgba(0, 0, 0, .54);
+  }
+  
+  /* .pm-stepper .pm-stepper-step .pm-stepper-bar-left,
+  .pm-stepper .pm-stepper-step .pm-stepper-bar-right {
+    position: absolute;
+    top: 36px;
+    height: 1px;
+    border-top: 1px solid #BDBDBD;
+  } */
+  
+  /* .pm-stepper .pm-stepper-step .pm-stepper-bar-right {
+    right: 0;
+    left: 50%;
+    margin-left: 20px;
+  } */
+  
+  /* .pm-stepper .pm-stepper-step .pm-stepper-bar-left {
+    left: 0;
+    right: 50%;
+    margin-right: 20px;
+  } */
+
+  .pm-stepper-step-wrp{
+      width: 100%;
+      display: table;
+      margin: auto;
+  }
+  .pm-stepper-button-container{
+    float: right;    
+  }
+  .pm-stepper-button-container button{
+    margin: 0 0 0 10px;
+    float: left;
+}
+  /* --------------- STEPPER END ------------------ */
+
+  .pm-card, .pm-user-list{
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+.pm-user-list:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+  .pm-alter{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .pm-alter-error{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+  }
+
+  select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+
+.pm-user-role-container{
+    display:block;
+    color: #878f9f;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;          
+    width: 70%;
+    text-overflow: ellipsis; 
+}
+
+.box.is-dragover {
+    background-color: #ccc;
+}
+
+.react-bs-table-add-btn{
+    margin-left: 10px !important;
+} 
+
+.react-bs-table-add-btn i{
+    display: none;
+} 
+
+.pm-reset-password-info{
+    margin-bottom: 20px;
+    word-wrap: break-word !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    color: #484848 !important;
+    font-weight: 300 !important;
+}
+
+.pm-reset-password-form-container{
+    padding: 0 50px;
+}
+
+
+.pm-reset-password-button{
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+
+  .mdl-layout-spacer{
+      text-align: center !important;
+      font-size: 20px;
+      font-weight: bolder;
+  }
+
+  label{
+      margin-bottom: 0px !important;
+  }
+
+  .pm-error-message{
+      color: red;
+  }
+
+
+  /* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 214748364; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein .5s, fadeout .5s 9s;
+    animation: fadein .5s, fadeout .5s 9s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+/****************** Transition animations **********************/
+
+
+
+.example-appear {
+    opacity: 0.01;
+  }
+  
+  .example-appear.example-appear-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+  }
+  
+
+
+  #pm-chart-preview >.highcharts-container {
+    margin: auto !important;
+  }
+/* ***************ADMIN DASHBOARD**************** */
+
+
+
+
+
+
+.pm-admin-dashboard-infographic-user{
+    font-size: 60px;
+}
+
+/* Override mdl styling */
+.rem-omk-detail .mdl-textfield__label:after {
+    bottom: 0
+}
+
+.rem-mdl-textfield .mdl-textfield__label:after {
+    bottom: 2px
+}

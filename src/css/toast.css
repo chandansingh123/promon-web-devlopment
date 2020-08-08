@@ -1,0 +1,19 @@
+.toast-container {
+  width: 100vw;
+  left: 0;
+  padding: 0;
+  bottom: 0;
+}
+
+.toast-message {
+  min-height: 44px;
+  padding-left: 24px;
+  padding-right: 30px;
+  margin-bottom: 4px;
+}
+
+.toast-message > button {
+  font-size: 28px;
+  line-height: 26px;
+  padding-top: 2px;
+}

@@ -1,0 +1,5 @@
+/* CSS rules to override default browser behaviors. */
+
+input:invalid {
+  box-shadow: none;
+}
